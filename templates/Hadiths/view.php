@@ -25,16 +25,16 @@
                         <?= $this->Html->link(__('<i class="fa-solid fa-pen-to-square"></i> Edit'), ['action' => 'edit', $hadith->id], ['class' => 'btn bg-warning-subtle btn-block same-size-button', 'escape' => false])?>
                     </li>
                     <li class="list-group-item">
+                        <?= $this->Html->link(__('<i class="fa-solid fa-plus"></i> Add'), ['action' => 'add'], ['class' => 'btn bg-warning-subtle btn-block same-size-button', 'escape' => false])?>
+                    </li>
+                    <li class="list-group-item">
                         <?= $this->Form->postLink(__('<i class="fa-solid fa-eraser"></i> Delete'), ['action' => 'delete', $hadith->hadith], ['confirm' => __('Are you sure you want to delete the hadith?', $hadith->category), 'class' => 'btn bg-warning-subtle btn-block same-size-button', 'escape' => false])?>
                     </li>
                     <li class="list-group-item">
-                        <?= $this->Html->link(__('<i class="fa-solid fa-plus"></i> Hadith'), ['action' => 'add'], ['class' => 'btn bg-warning-subtle btn-block same-size-button', 'escape' => false])?>
+                        <?= $this->Html->link(__('<i class="fa-solid fa-arrow-left"></i> Back'), ['controller' => 'Hadiths', 'action' => 'index'], ['class' => 'btn bg-warning-subtle btn-block same-size-button', 'escape' => false]) ?>
                     </li>
                     <li class="list-group-item">
                         <?= $this->Html->link(__('<i class="fa-solid fa-clipboard-list"></i> Category'), ['controller' => 'Categories','action' => 'index'], ['class' => 'btn bg-warning-subtle btn-block same-size-button', 'escape' => false])?>
-                    </li>
-                    <li class="list-group-item">
-                        <?= $this->Html->link(__('<i class="fa-solid fa-clipboard-list"></i> Hadith'), ['controller' => 'Hadiths', 'action' => 'index'], ['class' => 'btn bg-warning-subtle btn-block same-size-button', 'escape' => false]) ?>
                     </li>
                 </ul>
             </div>

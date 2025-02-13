@@ -26,13 +26,13 @@
                         <?= $this->Html->link(__('<i class="fa-solid fa-pen-to-square"></i> Edit'), ['action' => 'edit', $category->id], ['class' => 'btn bg-warning-subtle btn-block same-size-button', 'escape' => false]) ?>
                     </li>
                     <li class="list-group-item">
+                        <?= $this->Html->link(__('<i class="fa-solid fa-plus"></i> Add'), ['action' => 'add'], ['class' => 'btn bg-warning-subtle btn-block same-size-button', 'escape' => false]) ?>
+                    </li>
+                    <li class="list-group-item">
                         <?= $this->Form->postLink(__('<i class="fa-solid fa-eraser"></i> Delete'), ['action' => 'delete', $category->id], ['confirm' => __('Are you sure you want to delete category: {0}?', $category->category), 'class' => 'btn bg-warning-subtle btn-block same-size-button', 'escape' => false]) ?>
                     </li>
                     <li class="list-group-item">
-                        <?= $this->Html->link(__('<i class="fa-solid fa-plus"></i> Category'), ['action' => 'add'], ['class' => 'btn bg-warning-subtle btn-block same-size-button', 'escape' => false]) ?>
-                    </li>
-                    <li class="list-group-item">
-                        <?= $this->Html->link(__('<i class="fa-solid fa-clipboard-list"></i> Category'), ['action' => 'index'], ['class' => 'btn bg-warning-subtle btn-block same-size-button', 'escape' => false]) ?>
+                        <?= $this->Html->link(__('<i class="fa-solid fa-arrow-left"></i> Back'), ['action' => 'index'], ['class' => 'btn bg-warning-subtle btn-block same-size-button', 'escape' => false]) ?>
                     </li>
                     <li class="list-group-item">
                         <?= $this->Html->link(__('<i class="fa-solid fa-clipboard-list"></i> Hadith'), ['controller' => 'Hadiths', 'action' => 'index'], ['class' => 'btn bg-warning-subtle btn-block same-size-button', 'escape' => false]) ?>

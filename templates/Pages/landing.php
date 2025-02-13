@@ -73,8 +73,17 @@
     <div class="container mt-4">
         <div class="hero">
             <h1>Sunnah Compendium</h1>
-            <p>Know the Sunnah, Avoid the Bida'ah</p>
+            <p>Discover the Sunnah, Discern the Right Path</p>
             <?= $this->Html->link(__('Explore Hadith <i class="fa-solid fa-arrow-right ms-1"></i>'), ['controller' => 'Hadiths', 'action' => 'index'], ['class' => 'btn btn-success', 'escape' => false]) ?>
+        </div>
+    </div>
+    
+    <div class="container mt-4">
+        <div class="row">
+            <h2>How to use</h2>
+            <div class="col-md-4">1</div>
+            <div class="col-md-3">2</div>
+            <div class="col-md-3">3</div>
         </div>
     </div>
 
